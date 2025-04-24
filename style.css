@@ -1,0 +1,65 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+    outline: none;
+    border: none;
+    
+}
+:root{
+    
+}
+html{
+    font-size: 62.5%;
+    overflow: hidden;
+}
+body{
+    background: #013e20;
+    color: #fff
+}
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #00000061;
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3rem 9%;
+    z-index: 100;
+    color: #fff;
+   
+}
+.header .logo{
+    font-size: 3rem;
+    color: #ffffff;
+    font-weight: 800;
+    cursor: pointer;
+    transition: 0.s3s ease-in-out;
+}
+.logo:hover{
+   transform: scale(1.1);
+}
+.navbar{
+    font-size:1.8rem;
+    color: #fff;
+    font-weight: 500;
+    transitiom: 0.3s ease-in-out;
+    border-bottom: 3px solid transparent;
+}
+.navbar a:hover,
+.navbar a.active{
+    color: #fff;
+    border-bottom: 3px solid #fff;
+}
+#menu-icon{
+    font-size: 3.6rem;
+    color: #fff;
+    cursor: pointer;
+    display: none;
+}
