@@ -3,63 +3,129 @@
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
-    font-family: 'Poppins', sans-serif;
     scroll-behavior: smooth;
-    outline: none;
-    border: none;
-    
+    font-family: 'Poppins', ;
+
 }
 :root{
-    
+    --bg-color: #080808;
+    --second-bg-color: #101010 ;
+    --text-color:white;
+    --main-color: #ea580c;
 }
-html{
-    font-size: 62.5%;
-    overflow: hidden;
+html {
+font-size: 60%;
+overflow: hidden;
 }
+
 body{
-    background: #013e20;
-    color: #fff
+    background: var(--bg-color);
+    color: var(--text-color);
 }
 .header{
     position: fixed;
+    width: 100%;
     top: 0;
     left: 0;
-    width: 100%;
-    background-color: #00000061;
+    padding: 4rem 15%;
+    background: var(--second-bg-color);
     backdrop-filter: blur(10px);
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 3rem 9%;
-    z-index: 100;
-    color: #fff;
-   
+    z-index: 1000;
 }
-.header .logo{
+meu-icon{
+    font-size: 3.5rem;
+    color: var(--main-color);
+    display: none;
+}
+
+.logo{
     font-size: 3rem;
-    color: #ffffff;
+    color: var(--text-color-color)
     font-weight: 800;
     cursor: pointer;
-    transition: 0.s3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+   
+    
 }
 .logo:hover{
-   transform: scale(1.1);
+    
+    transform: scale(1.1);
 }
-.navbar{
-    font-size:1.8rem;
-    color: #fff;
+span{
+    background: linear-gradient(
+        270deg,
+        yellow 10%,
+        red 100%
+    );
+        background-clip: text;
+        color: transparent;
+ }
+ .navbar a{
+    font-size: 1.8rem;
+    color: var(--text-color);
+    margin-left: 4rem;
     font-weight: 500;
-    transitiom: 0.3s ease-in-out;
-    border-bottom: 3px solid transparent;
-}
-.navbar a:hover,
-.navbar a.active{
-    color: #fff;
-    border-bottom: 3px solid #fff;
-}
-#menu-icon{
-    font-size: 3.6rem;
-    color: #fff;
+    transition: 0.3s ease-in-out;
+    border-bottom: 3px;
+ }
+  .navbar a:hover{
+    font-size: 1.8rem;
+    border-bottom: solid 3px var(--main-color);
+  }
+  .grandient-btn{
+    font: size 1.8rem;
+    padding: 1rem 2rem;
+    border-radius: 3rem;
+    background: linear-gradient(
+        270deg,
+        yellow 10%,
+        red 100%
+    );
+    letter-spacing: 1px;
     cursor: pointer;
-    display: none;
+    transition: 0.3s ease-in-out;
+    color : var(--text-color);
+    text-wrap: nowrap;
+  }
+  .gradient-btn:hover{
+    transform: scale(1.05);
+  }
+
+  .section{
+    min-height: 100hv;
+    padding: 10rem 15%;
+
+  }
+  .home{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15rem;
+
+  }
+  .home-content{
+    dispolay: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    text-align: right
+  }
+  .home-content h1{
+    font-size: 8rem;
+    font-weight: 700;
+    margin-top: 1.5rem;
+    line-height: 1;
+
+  }
+  .home-content h3{
+    margin: 1rem 0;
+    font-size: 4rem;
+
+  }
+  .home-content p{
+  margin: 1rem 0;
+  font-size: 4rem;
+  
 }
