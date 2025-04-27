@@ -7,5 +7,7 @@
 			"path": "../../Documents/GitHub/porofolio/.git"
 		}
 	],
-	"settings": {}
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "personal-cv"
+	}
 }
