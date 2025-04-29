@@ -329,13 +329,13 @@ line-height:1.;
 
 .project-box {
   display: flex;
-  flex-wrap: wrap;  /* This allows the projects to wrap into new rows */
-  justify-content: space-between;  /* Distribute items evenly */
+  flex-wrap: wrap;  
+  justify-content: space-between;  
   gap: 3rem;
 }
 
 .project-card {
-  flex: 1 1 calc(33.33% - 2rem);  /* Makes each card take up 1/3 of the container minus some space for gaps */
+  flex: 1 1 calc(33.33% - 2rem);  
   display: flex;
   flex-direction: column;
   align-items: center;
